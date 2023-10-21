@@ -38,8 +38,6 @@ public class Alarm : MonoBehaviour
         }
 
        _alarm = StartCoroutine(SetVolume(volume));
-        
-
     }
 
     private IEnumerator SetVolume(float volume)
