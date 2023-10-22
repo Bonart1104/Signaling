@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class SecurityAlarm : MonoBehaviour
 {
-    private bool isWorkAlarm;
+    private bool _isWorkAlarm;
     private Alarm _alarm;
 
     private void Start()
@@ -15,8 +15,8 @@ public class SecurityAlarm : MonoBehaviour
     {
         if (collision.collider.TryGetComponent<Intruder>(out Intruder intruder))
         {
-            isWorkAlarm = true;
-            _alarm.TurnOn(isWorkAlarm);
+            _isWorkAlarm = true;
+            _alarm.TurnOn(_isWorkAlarm);
         }
     }
 
@@ -24,8 +24,8 @@ public class SecurityAlarm : MonoBehaviour
     {
         if (collision.collider.TryGetComponent<Intruder>(out Intruder intruder))
         {
-            isWorkAlarm = false;
-            _alarm.TurnOn(isWorkAlarm);
+            _isWorkAlarm = false;
+            _alarm.TurnOn(_isWorkAlarm);
         }
     }
 }

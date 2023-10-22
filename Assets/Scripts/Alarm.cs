@@ -19,17 +19,17 @@ public class Alarm : MonoBehaviour
     {
         if (isWork)
         {
-            TurnOnAlarm(_maxVolume);
+            TurnOn(_maxVolume);
 
             _audioSource.Play();
         }
         else
         {
-            TurnOnAlarm(_minVolume);
+            TurnOn(_minVolume);
         }
     }
 
-    private void TurnOnAlarm(float volume)
+    private void TurnOn(float volume)
     {
         if (_alarm != null)
         {
