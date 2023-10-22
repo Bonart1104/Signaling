@@ -8,7 +8,6 @@ public class SecurityAlarm : MonoBehaviour
 
     private void Start()
     {
-
         _alarm = GetComponent<Alarm>();
     }
 
