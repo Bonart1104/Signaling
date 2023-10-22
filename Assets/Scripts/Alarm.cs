@@ -15,7 +15,7 @@ public class Alarm : MonoBehaviour
         _audioSource.volume = _minVolume;    
     }
 
-    public void TurnOn(bool isWork)
+    public void Activate(bool isWork)
     {
         if (isWork)
         {

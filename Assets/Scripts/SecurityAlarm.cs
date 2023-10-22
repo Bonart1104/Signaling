@@ -16,7 +16,7 @@ public class SecurityAlarm : MonoBehaviour
         if (collision.collider.TryGetComponent<Intruder>(out Intruder intruder))
         {
             _isWorkAlarm = true;
-            _alarm.TurnOn(_isWorkAlarm);
+            _alarm.Activate(_isWorkAlarm);
         }
     }
 
@@ -25,7 +25,7 @@ public class SecurityAlarm : MonoBehaviour
         if (collision.collider.TryGetComponent<Intruder>(out Intruder intruder))
         {
             _isWorkAlarm = false;
-            _alarm.TurnOn(_isWorkAlarm);
+            _alarm.Activate(_isWorkAlarm);
         }
     }
 }
