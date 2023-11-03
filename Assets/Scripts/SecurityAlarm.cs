@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[RequireComponent(typeof(AudioSource))]
+[RequireComponent(typeof(Alarm))]
 public class SecurityAlarm : MonoBehaviour
 {
     private bool _isWorkAlarm;
